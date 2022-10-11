@@ -19,10 +19,10 @@ NEWSPIDER_MODULE = 'gogonewsanalyze.spiders'
 FEED_FORMAT = "json"
 FEED_URI = "investiraucameroun_posts.json"
 
-AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID","AKIAS3VXUZW7X2KY2VTP")
-AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY","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") 
+AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID","AKIASTLQHKTBFUQ3UNWQ")
+AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY","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") 
 
-FEED_URI='s3://gogonewsanalyze-'+os.environ.get("ENV","dev")+'/raw/date='+ datetime.today().strftime('%Y-%m-%d-%H-%M-%S')+'.json'
+FEED_URI='s3://mia-news-'+os.environ.get("ENV","dev")+'/raw/date='+ datetime.today().strftime('%Y-%m-%d-%H-%M-%S')+'.json'
 
 ITEM_PIPELINE = {
 'scrapy.pipelines.files.S3FilesStore': 1
