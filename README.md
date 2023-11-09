@@ -1,4 +1,4 @@
 # gogonewsanalyze
 
 
-Scrapper africa economy and stor result on S3
+Scrapper africa economy and store result on S3
